@@ -34,6 +34,7 @@ if input("לבחור שעה נוכחית בעצמך? (y/n) ") == "y":
 else:
     time = current_time
 
+
 # Load the GIF
 with Image.open(gif_path) as img:
     frames = []
@@ -70,7 +71,7 @@ with Image.open(gif_path) as img:
             image_width, image_height = frame.size
             shem_position = (image_width - shem_width - 145, 257)
             kita_position = (image_width - kita_width - 413, 258)
-            kita_number_position = (image_width - kita_number_width - (440 if len(kita) != 1 else 440), 266)
+            kita_number_position = (image_width - kita_number_width - (440 if len(kita) != 1 else 423), 266)
             shaa_position = (22, 219)
             taarich_position = (252, 218)
             time_position = (25, 14)
